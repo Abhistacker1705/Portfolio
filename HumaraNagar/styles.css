@@ -177,3 +177,27 @@ body{
     font-size: 0.6rem;
 
 }
+
+@media screen and (width<540px) {
+    
+    html{
+        font-size: 90%;
+    }
+
+    .workLogo{
+        position: unset;
+    }
+    
+}
+
+
+@media screen and (width<420px) {
+    
+    html{
+        font-size: 80%;
+    }
+
+    .workLogo{
+        position: unset;
+    }
+}
