@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    background-color: #111111;
+    color: ghostwhite;
+}
+
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navbar .Logo{
+    padding: 2rem 0rem 2rem 4rem;
+    font-size: 1.5rem;
+    color:purple;
+    cursor: pointer;
+}
+.Linkdiv{
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    padding: 2rem 4rem 2rem 0;
+}
+
+.Links{
+    color: ghostwhite;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Links:hover{
+    color: purple;
+    cursor: pointer;
+
+}
+
+/* Soon Section */
+
+.Sectionsoon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(80vh - 6rem);
+    padding: 0 4rem;
+    overflow: visible;
+
+}
+
+.SoonHeading{
+    font-size: 4.5rem;
+    background: linear-gradient(to right #346355,#784570);
+    /* filter: opacity(0.6); */
+}
+
+.workLogo{
+    position: absolute;
+    right:20px;
+    top:18%;
+    animation: rotate 1.75s infinite cubic-bezier(0.4, 0, 0.78, 0.95);
+    scale: 0.5;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(-45deg)
+    }
+    33.33% {
+      transform: rotate(60deg)
+    }
+    100% {
+        transform: rotate(-45deg)
+      }
+  }
+
+.SoonPara{
+    margin-top: 2rem;
+    min-width: 33vw;
+}
+
+.btnNotify{
+    margin: 4rem 0 3rem;
+    min-width: 8rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: purple;
+    color: ghostwhite;
+}
+
+.btnNotify:hover{
+    opacity: 0.5;
+}
+
+/* email newsletter */
+.email-formwrap{
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-height: 100vh;
+    min-width: 90vw;
+    backdrop-filter: blur(10px);
+}
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: ghostwhite;
+    padding: 3rem;
+    height: 30vh;
+    width: 40vw;
+}
+
+.forminput{
+    min-height: 2rem;
+    padding-left: 10px;
+    border-radius: 16px;
+}
+
+.closebtn{
+    position: relative;
+    align-self: flex-end;
+    width:1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #111111;
+}
+
+.formbtn{
+    border: 0;
+    min-height: 2rem;
+    border-radius: 16px;
+    width: 10rem;
+    align-self: center;
+    cursor: pointer;
+    background-color: purple;
+    color: ghostwhite;
+}
+
+/* Footer Section */
+
+
+.footer{
+    background-color: ghostwhite;
+    color: #111111;
+    padding: 8.25vh 4rem 2rem;
+}
+.footer-links{
+    scale:1.2;
+    color: #111111;
+    margin-right: 2rem;
+}
+.footer-links:hover{
+    color:purple;
+}
+
+.footer-para{
+    letter-spacing: -0.05em;
+    color: #111111;
+    opacity: 0.8;
+    text-align: center;
+}
+.footer-para:after{
+    content: "©2023";
+    position: relative;
+    right: -3px;
+    bottom: 2px;
+    font-size: 0.6rem;
+
+}
