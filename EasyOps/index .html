@@ -1,0 +1,40 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EasyOps Assignment</title>
+        <link rel="stylesheet" href="styles.css">
+		<script src="https://kit.fontawesome.com/91986cf2c1.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+	</head>
+	<body>
+		<main>
+			<form name="Personform" id="form-input" action="" method="post">
+				<label for="name">Person's Name</label>
+				<div>
+					<input id="f-name" class="inputs" placeholder="First" type="text" required />
+					<input id="l-name" class="inputs" placeholder="Last" type="text"  required />
+				</div>
+
+				<label for="number">Contact Number:</label>
+				<input id="p-num" class="inputs" type="tel" required/><br>
+
+				<input form="form-input" value="Save" type="submit" id="save--btn"></button>
+            </form>
+				<div id="search-container"><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="search-bar"/></div>
+
+				<table>
+					<thead>
+						<th id="serial-No">S.N.</th>
+						<th id="name-Header">Name</th>
+						<th>Contact</th>
+						<th>Delete</th>
+					</thead>
+					<tbody id="details"></tbody>
+				</table>
+		</main>
+
+	<script src="index.js"></script>
+	</body>
+</html>
